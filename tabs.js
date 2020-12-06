@@ -21,8 +21,6 @@ aboutUsTab.classList.add("aboutUs-tab");
 
 tabsContainer.append(homeTab, menuTab, shopTab, aboutUsTab);
 return tabsContainer;
-
-
 }
 
 export default tabs;

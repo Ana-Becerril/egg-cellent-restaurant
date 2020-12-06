@@ -6,7 +6,6 @@ body, html{
 }
 /*For Tabs*/
 .tabs-container{
-    background-color: red;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -18,7 +17,19 @@ body, html{
     font-size: 17px;
 }
 
-/*For Home Page*/
+/*For Home Page (Usar tipografía Pacífico)*/
 .home-container{
-    background-color: blue;
+    height: 100vh;
+    min-width: 0;
+    display: flex;
+}
+
+.home-right{
+    background-color: rgb(255, 182, 7);
+    width: 50%;
+}
+
+.home-left{
+    background:url(s)
+    width: 50%;
 }
