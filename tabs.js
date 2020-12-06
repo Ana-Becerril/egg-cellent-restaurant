@@ -1,6 +1,4 @@
-
 function tabs(){
-const parent=document.getElementById("parent")
 
 const tabsContainer=document.createElement("div");
 tabsContainer.classList.add("tabs-container");
@@ -22,7 +20,8 @@ aboutUsTab.innerHTML="About Us"
 aboutUsTab.classList.add("aboutUs-tab");
 
 tabsContainer.append(homeTab, menuTab, shopTab, aboutUsTab);
-parent.appendChild(tabsContainer);
+return tabsContainer;
+
 
 }
 

@@ -1,3 +1,5 @@
 import tabs from "../tabs"
+import home from "../home"
 
-tabs();
+const parent=document.getElementById("parent")
+parent.append(tabs(), home());

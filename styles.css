@@ -4,7 +4,7 @@ body, html{
     padding: 0%;
     margin: 0%;
 }
-
+/*For Tabs*/
 .tabs-container{
     background-color: red;
     display: flex;
@@ -16,4 +16,9 @@ body, html{
 
 .home-tab, .menu-tab, .shop-tab, .aboutUs-tab{
     font-size: 17px;
+}
+
+/*For Home Page*/
+.home-container{
+    background-color: blue;
 }
