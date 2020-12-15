@@ -1,3 +1,4 @@
+import './style.css';
 import tabs from "../tabs"
 import home from "../home"
 
