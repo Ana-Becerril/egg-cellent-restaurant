@@ -21,7 +21,6 @@ homeLeft.classList.add("home-left");
 homeContainer.append(homeRight, homeLeft);
 return homeContainer;
 
-
 }
 
 export default home;
