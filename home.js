@@ -9,7 +9,10 @@ homeRight.classList.add("home-right");
 const homeTittle=document.createElement("div");
 homeTittle.innerHTML="Eggcellent"
 homeTittle.classList.add("home-tittle");
-homeRight.appendChild(homeTittle)
+const homeSlogan=document.createElement("div")
+homeSlogan.innerHTML="MADE WITH LOTS OF... LOVE"
+homeSlogan.classList.add("home-slogan");
+homeRight.append(homeTittle, homeSlogan)
 
 
 const homeLeft=document.createElement("div");
