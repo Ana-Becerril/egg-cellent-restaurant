@@ -94,38 +94,14 @@ body, html{
     background-repeat: no-repeat; 
 }
 
-.menu-starters{
-    width: 100%;
-    height: 33%;
+.menu-starters, .menu-specials, .menu-drinks{
     font-family: 'Lora', serif;
     width: 100%;
     height: 30%;
     font-size: 25px;
     display: flex;
-    letter-spacing: 3px;
-    padding: 10px;
-}
-
-.menu-specials{
-    width: 100%;
-    height: 33%;
-    width: 100%;
-    height: 30%;
-    font-size: 25px;
-    display: flex;
+    letter-spacing: 8px;
+    padding: 8px 0 0 8px;
     justify-content: center;
-    letter-spacing: 3px;
-    padding: 10px;
-    
-}
-
-.menu-drinks{
-    width: 100%;
-    height: 33%;
-    width: 100%;
-    height: 30%;
-    font-size: 25px;
-    display: flex;
-    letter-spacing: 3px;
-    padding: 10px;
+    text-decoration: 1px underline black;
 }
