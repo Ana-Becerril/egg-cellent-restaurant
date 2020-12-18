@@ -65,3 +65,31 @@ body, html{
     justify-content: center;
     letter-spacing: 2px;
 }
+
+/*For Menu*/
+.menu-container{
+    height: 100vh;
+    min-width: 0;
+    display: flex;
+}
+
+.menu-left{
+    background: url('./menu-image.jpg');
+    width: 20%;
+    background-size: cover;
+    background-position-y: 25%;
+    background-repeat: no-repeat; 
+}
+
+.menu-middle{
+    background-color: rgb(255, 182, 7);
+    width: 60%;
+}
+
+.menu-right{
+    background: url('./menu-image.jpg');
+    width: 20%;
+    background-size: cover;
+    background-position-x: 20%;
+    background-repeat: no-repeat; 
+}
