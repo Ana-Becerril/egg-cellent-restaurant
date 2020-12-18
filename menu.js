@@ -10,7 +10,7 @@ function menu(){
     const menuStarters=document.createElement("div")
     menuMiddle.classList.add("menu-middle");
     menuStarters.innerHTML="STARTERS"
-    menuStarters.classList.add("menu-tittle");
+    menuStarters.classList.add("menu-starters");
     const menuSpecials=document.createElement("div")
     menuSpecials.innerHTML="SPECIALS"
     menuSpecials.classList.add("menu-specials");
