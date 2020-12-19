@@ -7,16 +7,28 @@ function menu(){
     menuLeft.classList.add("menu-left");
 
     const menuMiddle=document.createElement("div");
-    const menuStarters=document.createElement("div")
     menuMiddle.classList.add("menu-middle");
-    menuStarters.innerHTML="STARTERS"
+
+    const menuStarters=document.createElement("div")
     menuStarters.classList.add("menu-starters");
+    const textStarters=document.createElement("span")
+    textStarters.innerHTML="Starters"
+    textStarters.classList.add("txt-starters");
+    menuStarters.appendChild(textStarters)
+    
     const menuSpecials=document.createElement("div")
-    menuSpecials.innerHTML="SPECIALS"
     menuSpecials.classList.add("menu-specials");
+    const textSpecials=document.createElement("span")
+    textSpecials.innerHTML="Specials"
+    textSpecials.classList.add("txt-specials");
+    menuSpecials.appendChild(textSpecials);
+    
     const menuDrinks=document.createElement("div")
-    menuDrinks.innerHTML="DRINKS"
-    menuDrinks.classList.add("menu-drinks")
+    menuDrinks.classList.add("menu-drinks");
+    const textDrinks=document.createElement("span");
+    textDrinks.innerHTML="Drinks"
+    textDrinks.classList.add("txt-drinks");
+    menuDrinks.appendChild(textDrinks);
 
     menuMiddle.append(menuStarters, menuSpecials, menuDrinks)
 
