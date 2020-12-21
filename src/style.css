@@ -99,24 +99,46 @@ body, html{
     height: 30%;
     font-size: 23px;
     display: flex;
+    flex-direction: column;
 }
 
 .txt-starters, .txt-specials, .txt-drinks{
     font-family: 'Lora', serif;
-    letter-spacing: 5px;
+    letter-spacing: 12px;
     width: 100%;
     height: 30px;
-    font-size: 25px;
-    padding: 0 0 0 15px;
+    font-size: 35px;
     display: flex;
-    font: weight 600;
+    font-weight: 600;
+    flex-direction: column;
 }
 
 .txt-starters, .txt-drinks{
     justify-content: start;
+    margin-left: 15px;
 }
 
 .txt-specials{
-    justify-content: flex-end;
-    padding: 0 15px 0 0;
+    align-items: flex-end;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+}
+.options-tittle{
+    font-family:'Lora', serif; 
+    width: 100%;
+    font-size: 22px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    margin-left: 15px;
+    }
+
+.options-description{
+    font-family: 'Lora', serif;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: normal;
+    margin-left: 29px;
 }

@@ -12,21 +12,22 @@ function menu(){
     const menuStarters=document.createElement("div")
     menuStarters.classList.add("menu-starters");
     const textStarters=document.createElement("span")
-    textStarters.innerHTML="Starters"
+    textStarters.innerHTML="[Starters]"
     textStarters.classList.add("txt-starters");
-    menuStarters.appendChild(textStarters)
+    textStarters.append(addElementsToList("Benedict Eggs","kfnakfnk"));
+    menuStarters.append(textStarters)
     
     const menuSpecials=document.createElement("div")
     menuSpecials.classList.add("menu-specials");
     const textSpecials=document.createElement("span")
-    textSpecials.innerHTML="Specials"
+    textSpecials.innerHTML="[Specials]"
     textSpecials.classList.add("txt-specials");
     menuSpecials.appendChild(textSpecials);
     
     const menuDrinks=document.createElement("div")
     menuDrinks.classList.add("menu-drinks");
     const textDrinks=document.createElement("span");
-    textDrinks.innerHTML="Drinks"
+    textDrinks.innerHTML="[Drinks]"
     textDrinks.classList.add("txt-drinks");
     menuDrinks.appendChild(textDrinks);
 
@@ -37,7 +38,17 @@ function menu(){
 
     menuContainer.append(menuLeft,menuMiddle, menuRight);
 
-
+    function addElementsToList(tittle, description){
+        const option=document.createElement("div")
+        const tittleList=document.createElement("div")
+        tittleList.innerHTML=tittle;
+        tittleList.classList.add("options-tittle");
+        const list=document.createElement("div");
+        list.innerHTML=description;
+        list.classList.add("options-description");
+        option.append(tittleList,list);
+        return option;
+    }
 return menuContainer;
 
 }
