@@ -102,6 +102,10 @@ body, html{
     flex-direction: column;
 }
 
+.menu-specials {
+    align-items: flex-end;
+}
+
 .txt-starters, .txt-specials, .txt-drinks{
     font-family: 'Lora', serif;
     letter-spacing: 12px;
@@ -122,23 +126,32 @@ body, html{
     align-items: flex-end;
 }
 
-.option{
-    display: flex;
-    flex-direction: column;
+.txt-starters-menu, .txt-specials-menu, .txt-drinks-menu{
+    width: 50%;
 }
+
+.txt-specials-menu{
+    align-items: flex-end;
+    border-left: 5px black dotted;
+}
+
+.option{
+    font-family:'Lora', serif;
+}
+
 .options-tittle{
-    font-family:'Lora', serif; 
     width: 100%;
     font-size: 22px;
     letter-spacing: 5px;
     padding-top: 10px;
     margin-left: 15px;
+    font-style: italic;
     }
 
 .options-description{
     font-family: 'Lora', serif;
     width: 100%;
-    font-size: 15px;
-    letter-spacing: normal;
-    margin-left: 29px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-left: 15px;
 }
