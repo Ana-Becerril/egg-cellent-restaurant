@@ -12,7 +12,7 @@ homeTittle.classList.add("home-tittle");
 const homeSlogan=document.createElement("div")
 homeSlogan.innerHTML="MADE WITH LOTS OF... LOVE"
 homeSlogan.classList.add("home-slogan");
-homeRight.append(homeTittle, homeSlogan)
+    homeRight.append(homeTittle, homeSlogan)
 
 
 const homeLeft=document.createElement("div");

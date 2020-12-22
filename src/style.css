@@ -65,3 +65,93 @@ body, html{
     justify-content: center;
     letter-spacing: 2px;
 }
+
+/*For Menu*/
+.menu-container{
+    height: 100vh;
+    min-width: 0;
+    display: flex;
+}
+
+.menu-left{
+    background: url('./menu-image.jpg');
+    width: 20%;
+    background-size: cover;
+    background-position-y: 25%;
+    background-repeat: no-repeat; 
+}
+
+.menu-middle{
+    background-color: rgb(255, 182, 7);
+    width: 60%;
+}
+
+.menu-right{
+    background: url('./menu-image.jpg');
+    width: 20%;
+    background-size: cover;
+    background-position-x: 20%;
+    background-repeat: no-repeat; 
+}
+
+.menu-starters, .menu-specials, .menu-drinks{
+    width: 100%;
+    height: 30%;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-specials {
+    align-items: flex-end;
+}
+
+.txt-starters, .txt-specials, .txt-drinks{
+    font-family: 'Lora', serif;
+    letter-spacing: 12px;
+    width: 100%;
+    height: 30px;
+    font-size: 35px;
+    display: flex;
+    font-weight: 600;
+    flex-direction: column;
+}
+
+.txt-starters, .txt-drinks{
+    justify-content: start;
+    margin-left: 15px;
+}
+
+.txt-specials{
+    align-items: flex-end;
+}
+
+.txt-starters-menu, .txt-specials-menu, .txt-drinks-menu{
+    width: 50%;
+}
+
+.txt-specials-menu{
+    align-items: flex-end;
+    border-left: 5px black dotted;
+}
+
+.option{
+    font-family:'Lora', serif;
+}
+
+.options-tittle{
+    width: 100%;
+    font-size: 22px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    margin-left: 15px;
+    font-style: italic;
+    }
+
+.options-description{
+    font-family: 'Lora', serif;
+    width: 100%;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
