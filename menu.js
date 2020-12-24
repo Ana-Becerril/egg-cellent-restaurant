@@ -27,7 +27,6 @@ function menu(){
     const textSpecialsMenu=document.createElement("div");
     textSpecialsMenu.classList.add("txt-specials-menu");
     textSpecialsMenu.append(addElementsToList("Eggs & Bravas","Two poached eggs over Spanish tapas-style roasted potatoes. Served with buttered toast."), addElementsToList("Nested Eggs","Two poached eggs nestled in dressed greens with buttered seedy sourdough toast"),addElementsToList("Eggcellents","House made turkey sausage, in medium egg, cheddar cheese and honey mustard aioli in a house made bailey biscuit"));
-
     menuSpecials.append(textSpecials, textSpecialsMenu);
     
     const menuDrinks=document.createElement("div")
@@ -38,7 +37,6 @@ function menu(){
     const textDrinksMenu=document.createElement("div");
     textDrinksMenu.classList.add("txt-drinks-menu")
     textDrinksMenu.append(addElementsToList("Juice", "Orange, cononut, strawberry or blackberries"),addElementsToList("House made beer", ""), addElementsToList("Ice green tea","") );
-
     menuDrinks.append(textDrinks, textDrinksMenu);
 
     menuMiddle.append(menuStarters, menuSpecials, menuDrinks)

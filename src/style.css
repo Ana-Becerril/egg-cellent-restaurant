@@ -155,3 +155,25 @@ body, html{
     letter-spacing: 1px;
     margin-left: 15px;
 }
+
+/*For Shop*/
+
+.shop-container{
+width: 100%;
+height: 100vh;
+}
+
+.header-shop{
+    width: 100%;
+    height: 50%;
+    background: url('./home-image.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+    background-repeat: no-repeat;  
+}
+
+.body-shop{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(255, 182, 7);
+}
