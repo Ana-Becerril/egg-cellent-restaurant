@@ -4,6 +4,10 @@ function shop(){
 
     const headerShop=document.createElement("div");
     headerShop.classList.add("header-shop");
+    const tittleShop=document.createElement("div");
+    tittleShop.innerHTML="Enjoy!"
+    tittleShop.classList.add("shop-tittle")
+    headerShop.appendChild(tittleShop);
 
     const bodyShop=document.createElement("div");
     bodyShop.classList.add("body-shop");
