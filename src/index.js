@@ -5,6 +5,12 @@ import Image from './home-image.jpg';
 import menu from '../menu';
 import shop from '../shop'
 import shopImage from './shop-image.jpg';
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
+
+
 
 
 const parent=document.getElementById("parent")

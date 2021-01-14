@@ -4,29 +4,28 @@ function shop(){
 
     const headerShop=document.createElement("div");
     headerShop.classList.add("header-shop");
+
     const tittleShop=document.createElement("div");
     tittleShop.innerHTML="Enjoy!"
     tittleShop.classList.add("shop-tittle")
-    headerShop.appendChild(tittleShop);
+    const iconCartContainer=document.createElement("div");
+    iconCartContainer.classList.add("icon-cart-container");
+
+    headerShop.append(tittleShop,iconCartContainer);
 
     const bodyShop=document.createElement("div");
     bodyShop.classList.add("body-shop");
-
     const itemsParent=document.createElement("div");
     itemsParent.classList.add("items-parent")
-
     const itemOneShop=document.createElement("div");
     itemOneShop.classList.add("item-one-shop");
-    itemOneShop.append(addElementsToListShop("IN FAMILY", "4 eggs (to choose), 4 breads, 4 drinks", "ADD TO CART"));
-
+    itemOneShop.append(addElementsToListShop("LOOKING 4 EGGS", "4 eggs (to choose), 4 breads, 4 drinks", "ADD TO CART"));
     const itemTwoShop=document.createElement("div");
     itemTwoShop.classList.add("item-two-shop");
     itemTwoShop.append(addElementsToListShop("FOR SHARE", "2 eggs (to choose), 2 breads, 2 drinks", "ADD TO CART"));
-
     const itemThreeShop=document.createElement("div");
     itemThreeShop.classList.add("item-three-shop");
-    itemThreeShop.append(addElementsToListShop("ÑAM", "1 eggs (to choose), 1 breads, 1 drinks", "ADD TO CART"));
-
+    itemThreeShop.append(addElementsToListShop("ÑAM", "1 eggs (to choose), 1 breads, 1 drink", "ADD TO CART"));
     itemsParent.append(itemOneShop,itemTwoShop,itemThreeShop);
     bodyShop.appendChild(itemsParent);
     shopContainer.append(headerShop, bodyShop);
