@@ -8,10 +8,12 @@ function shop(){
     const tittleShop=document.createElement("div");
     tittleShop.innerHTML="Enjoy!"
     tittleShop.classList.add("shop-tittle")
+    const iconContainer=document.createElement("div");
+    iconContainer.classList.add("icon-container");
     const iconCartContainer=document.createElement("div");
     iconCartContainer.classList.add("icon-cart-container");
-
-    headerShop.append(tittleShop,iconCartContainer);
+    iconContainer.appendChild(iconCartContainer)
+    headerShop.append(tittleShop,iconContainer);
 
     const bodyShop=document.createElement("div");
     bodyShop.classList.add("body-shop");

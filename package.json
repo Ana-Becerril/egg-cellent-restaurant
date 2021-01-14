@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/Ana-Becerril/egg-cellent-restaurant#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "css-loader": "^5.0.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.14.0",
