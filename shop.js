@@ -1,4 +1,8 @@
+let value=0;
+
+
 function shop(){
+
     const shopContainer=document.createElement("div");
     shopContainer.classList.add("shop-container");
 
@@ -8,10 +12,25 @@ function shop(){
     const tittleShop=document.createElement("div");
     tittleShop.innerHTML="Enjoy!"
     tittleShop.classList.add("shop-tittle")
+
     const iconContainer=document.createElement("div");
     iconContainer.classList.add("icon-container");
+
     const iconCartContainer=document.createElement("div");
     iconCartContainer.classList.add("icon-cart-container");
+
+    const iconCart=document.createElement("i");
+    iconCart.classList.add("icon-cart");
+    const counter=document.createElement("div")
+    counter.classList.add("counter");
+    const valueElement = document.createElement('p'); 
+    valueElement.classList.add("value-shop")
+    valueElement.innerHTML = `${value}`;
+
+
+    counter.append(valueElement);
+    iconCartContainer.append(iconCart, counter);
+
     iconContainer.appendChild(iconCartContainer)
     headerShop.append(tittleShop,iconContainer);
 
@@ -44,7 +63,15 @@ function shop(){
         const buttonShop=document.createElement("button");
         buttonShop.innerHTML=button;
         buttonShop.classList.add("button-shop");
+        buttonShop.onclick=incrementIndex;
         optionShop.append(tittleListShop,listShop,buttonShop);
+ 
+
+        function incrementIndex(){
+            value+= 1;
+            valueElement.innerHTML = `${value}`;
+        }
+
         return optionShop;
     }
 
