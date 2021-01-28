@@ -1,3 +1,5 @@
+import cart from    './src/opencart-brands.svg'
+
 let value=0;
 
 
@@ -19,13 +21,15 @@ function shop(){
     const iconCartContainer=document.createElement("div");
     iconCartContainer.classList.add("icon-cart-container");
 
-    const iconCart=document.createElement("i");
+    const iconCart=document.createElement("img");
+    iconCart.src = cart;    
     iconCart.classList.add("icon-cart");
+
     const counter=document.createElement("div")
     counter.classList.add("counter");
     const valueElement = document.createElement('p'); 
     valueElement.classList.add("value-shop")
-    valueElement.innerHTML = `${value}`;
+    valueElement.innerHTML = `${value}`;    
 
 
     counter.append(valueElement);

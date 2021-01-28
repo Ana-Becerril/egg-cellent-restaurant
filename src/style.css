@@ -192,6 +192,14 @@ height: 100vh;
     position: relative;
 }
 
+.icon-cart{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 33px;
+    bottom: 15px;
+}
+
 .counter{
   width: 35px;
   height: 35px;
