@@ -53,6 +53,7 @@ function shop(){
     itemThreeShop.append(addElementsToListShop("ÑAM", "1 eggs (to choose), 1 breads, 1 drink", "ADD TO CART"));
     itemsParent.append(itemOneShop,itemTwoShop,itemThreeShop);
     bodyShop.appendChild(itemsParent);
+    
     shopContainer.append(headerShop, bodyShop);
 
     function addElementsToListShop(tittle, description,button){
