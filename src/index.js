@@ -14,7 +14,7 @@ import aboutusImage from './aboutus.jpg'
 
 
 const parent=document.getElementById("parent")
-parent.append(tabs(), aboutus());
+parent.append(tabs(), menu());
 
 const myImage = document.createElement("img");
 myImage.src = Image;

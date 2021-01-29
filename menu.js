@@ -39,12 +39,9 @@ function menu(){
     textDrinksMenu.append(addElementsToList("Juice", "Orange, cononut, strawberry or blackberries"),addElementsToList("House made beer", ""), addElementsToList("Ice green tea","") );
     menuDrinks.append(textDrinks, textDrinksMenu);
 
-    menuMiddle.append(menuStarters, menuSpecials, menuDrinks)
+    menuMiddle.append(menuStarters, menuSpecials, menuDrinks);
 
-    const menuRight=document.createElement("div");
-    menuRight.classList.add("menu-right");
-
-    menuContainer.append(menuLeft,menuMiddle, menuRight);
+    menuContainer.append(menuLeft,menuMiddle);
 
     function addElementsToList(tittle, description){
         const option=document.createElement("div")
