@@ -15,19 +15,22 @@ function aboutus(){
     tittleAbout.classList.add("tittle-about");
 
     const aboutMe=document.createElement("div");
-    aboutMe.innerHTML="Hello, I'm Ana Frontend Developer"
+    aboutMe.innerHTML="Hello, I'm Ana a Frontend Developer"
     aboutMe.classList.add("aboutme");
 
     const contactCotainer=document.createElement("div");
+    contactCotainer.innerHTML="Contact me at"
     contactCotainer.classList.add("contact-container");
 
     const githubIcon=document.createElement("img");
     githubIcon.src=github;
     githubIcon.classList.add("github-icon");
+    githubIcon.onclick= getGithub;
     
     const linkedinIcon=document.createElement("img");
     linkedinIcon.src=linkedin;
     linkedinIcon.classList.add("linkedin-icon");
+    linkedinIcon.onclick= getLinkedIn;
 
     contactCotainer.append(githubIcon, linkedinIcon);
     headerAbout.append(tittleAbout, aboutMe, contactCotainer);
@@ -38,6 +41,15 @@ function aboutus(){
     aboutContainer.append(headerAbout, bodyAbout);
 
     return aboutContainer;
+
+    function getGithub(){
+        window.location.href = 'https://github.com/Ana-Becerril';
+    };
+
+    function getLinkedIn(){
+        window.location.href = 'https://www.linkedin.com/in/anabecbel/';
+    };
+
 }
 
 export default aboutus;
