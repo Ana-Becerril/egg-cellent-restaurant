@@ -43,7 +43,7 @@ function aboutus(){
     return aboutContainer;
 
     function getGithub(){
-        window.location.href = 'https://github.com/Ana-Becerril';
+        
     };
 
     function getLinkedIn(){

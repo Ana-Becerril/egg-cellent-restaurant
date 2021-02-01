@@ -27,6 +27,12 @@ body, html{
     letter-spacing: 3px;
 }
 
+.tabs-test:hover{
+    color: rgb(130, 114, 142);
+    font-size: 120%;
+    text-decoration-line: underline;
+}
+
 /*For Home Page (Usar tipografía Pacífico)*/
 .home-container{
     height: 100vh;
