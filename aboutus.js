@@ -11,15 +11,15 @@ function aboutus(){
     headerAbout.classList.add("header-about");
     
     const tittleAbout=document.createElement("div");
-    tittleAbout.innerHTML="Made with lots of love (and eggs)"
+    tittleAbout.innerHTML="MADE WITH LOTS OF LOVE (AND EGGS)"
     tittleAbout.classList.add("tittle-about");
 
     const aboutMe=document.createElement("div");
-    aboutMe.innerHTML="Hello, I'm Ana a Frontend Developer"
+    aboutMe.innerHTML="HELLO, I'M ANA A FRONTEND DEVELOPER"
     aboutMe.classList.add("aboutme");
 
     const contactCotainer=document.createElement("div");
-    contactCotainer.innerHTML="Contact me at"
+    contactCotainer.innerHTML="CONTACT ME AT"
     contactCotainer.classList.add("contact-container");
 
     const githubIcon=document.createElement("img");
