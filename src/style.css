@@ -548,6 +548,9 @@ flex-direction: column;
 
       @media only screen and (max-width: 425px) {
 
+        body::-webkit-scrollbar {
+            display: none;
+          }
 
         .home-tab, .menu-tab, .shop-tab, .aboutUs-tab{
             font-size: 10px;
