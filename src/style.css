@@ -1,0 +1,789 @@
+@font-face {
+    font-family: 'Lora', serif, 'Pacifico', cursive;
+    src: url('./home-font.woff') format('woff'), url('./tittle-font.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body, html, .parent{
+    width: 100%;
+    height:100%;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: rgb(255, 182, 7);
+
+}
+/*For Tabs*/
+.tabs-container{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 32px;
+    align-items: center;
+}
+
+.home-tab, .menu-tab, .shop-tab, .aboutUs-tab{
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+.tabs-test:hover{
+    color: rgb(130, 114, 142);
+    font-size: 120%;
+    text-decoration-line: underline;
+}
+
+/*For Home Page (Usar tipografía Pacífico)*/
+.home-container{
+    height: 100vh;
+    min-width: 0;
+    display: flex;
+}
+
+.home-right{
+    width: 50%;
+}
+
+.home-left{
+    background: url('./home-image.jpg');
+    width: 50%;
+    background-size: cover;
+    background-position-y: 25%;
+    background-repeat: no-repeat;  
+}
+
+.home-tittle{
+    font-family: 'Lora', serif;
+    width: 100%;
+    height: 70%;
+    font-size: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-slogan{
+    font-family: 'Lora', serif;
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+/*For Menu*/
+.menu-container{
+    height: 100vh;
+    min-width: 0;
+    display: flex;
+}
+
+.menu-left{
+    background: url('./menu-image.jpg');
+    width: 48%;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.menu-middle{
+    width: 52%;
+}
+
+.menu-starters, .menu-specials, .menu-drinks{
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-starters, .txt-specials, .txt-drinks{
+    font-family: 'Lora', serif;
+    letter-spacing: 12px;
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    display: flex;
+    font-weight: 600;
+    flex-direction: column;
+}
+
+.txt-starters, .txt-drinks, .txt-specials{
+    justify-content: start;
+    align-items: center;
+}
+
+.txt-starters {
+    margin-top: 12px;
+}
+
+.txt-drinks{
+    margin-top: 18px;
+}
+
+.txt-specials{
+    margin-top: 8px;
+}
+
+.txt-starters-menu, .txt-specials-menu, .txt-drinks-menu{
+    width: 90%;
+    text-align: justify;
+
+}
+
+.option{
+    font-family:'Lora', serif;
+    margin-left: 30px;
+}
+
+.options-tittle{
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    margin-left: 15px;
+    font-style: italic;
+    }
+
+.options-description{
+    font-family: 'Lora', serif;
+    width: 90%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    text-align: justify;
+
+}
+
+/*For Shop*/
+
+.shop-container{
+width: 100%;
+height: 100vh;
+}
+
+.header-shop{
+    width: 100%;
+    height: 70%;
+    background: url('./shop-image.jpg');
+    background-size: cover;
+    background-position-y: 87%;
+    background-repeat: no-repeat;  
+    display: flex;
+}
+
+.icon-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-cart-container{
+    width: 142px;
+    height: 123px;
+    border-radius: 0 0 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(255, 182, 7);
+
+}
+
+.icon-cart{
+    width: 82px;
+    height: 80px;
+    position: absolute;
+    left: 21px;
+    bottom: 12px;
+}
+
+.counter{
+    width: 42px;
+    height: 42px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-shop{
+  font-size: 30px;
+}
+
+.body-shop{
+    width: 100%;
+    height: 34%;
+    background-color: rgb(255, 182, 7);
+}
+
+.shop-tittle{
+    font-family: 'Lora', serif;
+    width: 29%;
+    height: 149%;
+    font-size: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.items-parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-one-shop, .item-two-shop, .item-three-shop{
+    width: 33%;
+    height: 80%;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-shop{
+    width: 150px;
+    height: 25px;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    background-color: transparent;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border:transparent;
+    border-left: double 4px black;
+    border-right: double 4px black;
+
+}
+
+.options-tittle-shop{
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    align-self:center;
+    letter-spacing: 4px;
+}
+
+/*For About Us*/
+
+.about-container{
+    width: 100%;
+    height: 100vh;
+    }
+
+    .header-about{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .body-about{
+        width: 100%;
+        height: 70%;
+        background: url('./aboutus.jpg');
+        background-size:cover;
+        background-position-y: 85%;
+        background-repeat: no-repeat;  
+        display: flex;
+    }
+
+    .tittle-about{
+        font-family: 'Lora', serif;
+        width: 100%;
+        height: 30%;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500; 
+    }
+
+    .aboutme{
+        font-family: 'Lora', serif;
+        width: 100%;
+        height: 30%;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500; 
+    }
+
+    .contact-container{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500; 
+        font-family: 'Lora', serif;
+        font-size: 25px;
+        font-weight: 500; 
+
+    }
+
+    .github-icon, .linkedin-icon{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    /*Scrollbar*/
+
+    body::-webkit-scrollbar {
+        width: 12px;
+        border-radius: 10px;
+        background-color: transparent;
+
+      }
+       
+      body::-webkit-scrollbar-track {
+        border-radius: 10px;
+
+      }
+       
+      body::-webkit-scrollbar-thumb {
+        background-color:  rgba(255, 182, 7, 0.5);
+        border-radius: 10px;
+
+      }
+
+      @media screen and (min-width:907px) and (max-width: 1024px) {
+        .home-tittle{
+            font-size: 90px;
+        }
+
+        .shop-tittle{
+            display: none;
+        }
+
+        .icon-cart-container{
+            width: 120px;
+            height: 120px;
+        }
+    
+      }
+
+      @media screen and (min-width:426px) and (max-width: 906px) {
+    
+        .home-tab, .menu-tab, .shop-tab, .aboutUs-tab{
+            font-size: 15px;
+        }
+
+        .home-container{
+                flex-direction: column;
+        }
+
+        .home-left{
+            width: 100%;
+            height: 70%;
+            background-position-y: 22%;
+        }
+
+        .home-right{
+            width: 100%;
+            height: 40%;
+            background-size: cover;
+        }
+
+        .home-tittle{
+            width: 100%;
+            height: 60%;
+            font-size: 85px;
+        }
+        
+        .home-slogan{
+            width: 100%;
+            height: 30%;
+            font-size: 20px;
+           
+        }
+
+        .menu-container{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        
+        .menu-left{
+            width: 100%;
+            background-size: cover;
+            background-position-y: 68%;
+            height: 45%;
+        }
+        
+        .menu-middle{
+            margin-top: 20px;
+            width: 100%;
+            height: 50%;
+        }
+
+        .shop-container{
+flex-direction: column;
+}
+
+.header-shop{
+    width: 100%;
+    height: 45%;
+    background-position-y: 88%;
+    background-position-x: 50%;
+    background-size: 130%;
+}
+
+.icon-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-cart-container{
+    width: 70px;
+    height: 100px;
+}
+
+.icon-cart{
+    width: 60px;
+    height: 60px;
+    left: 6px;
+    bottom: 10px;
+}
+
+.counter{
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    right: 14px;
+}
+
+.value-shop{
+  font-size: 30px;
+}
+
+.body-shop{
+    width: 100%;
+    height: 65%;
+}
+
+.shop-tittle{
+    display: none;
+}
+
+.items-parent{
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-one-shop, .item-two-shop, .item-three-shop{
+    font-size: 22px;
+    width: 80%;
+    height: 50%;
+}
+
+.button-shop{
+    width: 170px;
+    height: 25px;
+}
+
+.options-tittle-shop{
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+    .header-about{
+        height: 35%;
+    }
+    
+    .body-about{
+        width: 100%;
+        height: 65%;
+        background-position-x: 45%;
+    }
+
+    .tittle-about{
+        width: 100%;
+        height: 30%;
+        font-size: 20px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutme{
+        width: 100%;
+        height: 30%;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .contact-container{
+        font-size: 15px;
+        font-weight: 500; 
+        letter-spacing: 2px;
+
+    }
+
+    .github-icon, .linkedin-icon{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+      }
+
+
+      @media only screen and (max-width: 425px) {
+
+        body::-webkit-scrollbar {
+            display: none;
+          }
+
+        .home-tab, .menu-tab, .shop-tab, .aboutUs-tab{
+            font-size: 10px;
+        }
+
+        .home-container{
+                flex-direction: column;
+        }
+
+        .home-left{
+            width: 100%;
+            height: 70%;
+            background-position-y: 22%;
+        }
+
+        .home-right{
+            width: 100%;
+            height: 30%;
+            background-size: cover;
+        }
+
+        .home-tittle{
+            width: 100%;
+            height: 70%;
+            font-size: 60px;
+        }
+        
+        .home-slogan{
+            width: 100%;
+            height: 30%;
+            font-size: 13px;
+           
+        }
+
+        .menu-container{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        
+        .menu-left{
+            width: 100%;
+            background-size: cover;
+            background-position-y: 68%;
+            height: 32%;
+        }
+        
+        .menu-middle{
+            margin-top: 20px;
+            width: 100%;
+            height: 50%;
+        }
+
+        .shop-container{
+flex-direction: column;
+}
+
+.header-shop{
+    width: 100%;
+    height: 36%;
+    background-position-y: 98%;
+    background-position-x: 50%;
+    background-size: 161%;
+}
+
+.icon-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .home-tab, .menu-tab, .shop-tab, .aboutUs-tab{
+        font-size: 10px;
+    }
+
+    .home-container{
+            flex-direction: column;
+    }
+
+    .home-left{
+        width: 100%;
+        height: 70%;
+        background-position-y: 22%;
+    }
+
+    .home-right{
+        width: 100%;
+        height: 30%;
+        background-size: cover;
+    }
+
+    .home-tittle{
+        width: 100%;
+        height: 70%;
+        font-size: 60px;
+    }
+    
+    .home-slogan{
+        width: 100%;
+        height: 30%;
+        font-size: 13px;
+       
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .menu-left{
+        width: 100%;
+        background-size: cover;
+        background-position-y: 68%;
+        height: 32%;
+    }
+    
+    .menu-middle{
+        margin-top: 20px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .shop-container{
+flex-direction: column;
+}
+
+.header-shop{
+width: 100%;
+height: 36%;
+background-position-y: 98%;
+background-position-x: 50%;
+background-size: 161%;
+}
+
+.icon-container{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: flex-end;
+}
+
+.icon-cart-container{
+    width: 57px;
+    height: 71px;
+
+}
+
+.icon-cart{
+    width: 50px;
+    height: 50px;
+    left: 5px;
+    bottom: 0px;
+}
+
+.counter{
+    width: 26px;
+    height: 26px;
+    top: 3px;
+    right: 15px;
+}
+
+.body-shop{
+    width: 100%;
+    height: 65%;
+}
+
+.shop-tittle{
+    display: none;
+}
+
+.items-parent{
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-one-shop, .item-two-shop, .item-three-shop{
+    font-size: 18px;
+    width: 80%;
+    height: 50%;
+}
+
+.button-shop{
+    width: 170px;
+    height: 25px;
+}
+
+.options-tittle-shop{
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+    .header-about{
+        height: 35%;
+    }
+    
+    .body-about{
+        width: 100%;
+        height: 65%;
+        background-position-x: 45%;
+    }
+
+    .tittle-about{
+        width: 100%;
+        height: 30%;
+        font-size: 15px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutme{
+        width: 100%;
+        height: 30%;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .contact-container{
+        font-size: 15px;
+        font-weight: 500; 
+        letter-spacing: 2px;
+
+    }
+
+    .github-icon, .linkedin-icon{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+        
+      }
